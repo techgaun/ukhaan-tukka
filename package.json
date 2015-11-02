@@ -1,0 +1,45 @@
+{
+  "name": "ukhaan-tukka",
+  "version": "0.1.0",
+  "description": "Random Nepali Ukhaan Tukka",
+  "license": "MIT",
+  "repository": "techgaun/ukhaan-tukka",
+  "author": {
+    "name": "techgaun",
+    "email": "coolsamar207@gmail.com",
+    "url": "samar.techgaun.com"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo --space 2 && nyc ava",
+    "cover": "nyc report --reporter=html"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "ukhaan.json"
+  ],
+  "keywords": [
+    "proverbs",
+    "sayings",
+    "ukhaan",
+    "tukka",
+    "ukhaan tukka"
+  ],
+  "dependencies": {
+    "meow": "^3.5.0",
+    "unique-random-array": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.3.0",
+    "xo": "^0.10.0"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  }
+}
